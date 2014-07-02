@@ -3,11 +3,11 @@
 # ----------------------- #
 
 url: http://rmine.github.io
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+title: RMine
+subtitle: A Ruby Rails Web developer.
+author: RMine
 simple_search: https://www.google.com/search
-description:
+description: just for fun, welcome guys.
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -19,7 +19,7 @@ date_format: "ordinal"
 subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-email:
+email: huangzr.kai7@gmail.com
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -64,13 +64,13 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 # ----------------------- #
 
 # Github repositories
-github_user:
+github_user: rmine
 github_repo_count: 0
 github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user:
+twitter_user: rminehzr
 twitter_tweet_button: true
 
 # Google +1
