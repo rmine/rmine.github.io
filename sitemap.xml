@@ -5,16 +5,23 @@
   
   <url>
     <loc>http://rmine.github.io/blog/archives/</loc>
-    <lastmod>2014-07-02T21:03:00+08:00</lastmod>
+    <lastmod>2014-07-02T21:12:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://rmine.github.io/</loc>
-    <lastmod>2014-07-02T21:03:00+08:00</lastmod>
+    <lastmod>2014-07-02T21:12:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rmine.github.io/blog/categories/</loc>
+    <lastmod>2014-07-02T21:12:20+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   
   
