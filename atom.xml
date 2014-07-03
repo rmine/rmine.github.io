@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[RMine]]></title>
+  <link href="http://rmine.github.io/atom.xml" rel="self"/>
+  <link href="http://rmine.github.io/"/>
+  <updated>2014-07-02T23:35:05+08:00</updated>
+  <id>http://rmine.github.io/</id>
+  <author>
+    <name><![CDATA[RMine]]></name>
+    <email><![CDATA[huangzr.kai7@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[国际惯例 Hello Word!]]></title>
+    <link href="http://rmine.github.io/blog/2014/07/02/guo-ji-guan-li/"/>
+    <updated>2014-07-02T21:36:18+08:00</updated>
+    <id>http://rmine.github.io/blog/2014/07/02/guo-ji-guan-li</id>
+    <content type="html"><![CDATA[<p>先国际惯例,用ruby给大家大声招呼了</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">puts</span> <span class="s1">&#39;Hello World&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>以后工作之余,这里就是抒发心情的小基地啦</p>
+]]></content>
+  </entry>
+  
+</feed>
