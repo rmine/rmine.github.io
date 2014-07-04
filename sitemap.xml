@@ -3,6 +3,12 @@
   
   
   <url>
+    <loc>http://rmine.github.io/blog/2014/07/04/octopress-and-guthub-pages/</loc>
+    <lastmod>2014-07-04T21:47:17+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://rmine.github.io/blog/2014/07/02/guo-ji-guan-li/</loc>
     <lastmod>2014-07-02T21:36:18+08:00</lastmod>
     <priority>0.8</priority>
@@ -11,28 +17,28 @@
   
   <url>
     <loc>http://rmine.github.io/blog/archives/</loc>
-    <lastmod>2014-07-03T22:05:38+08:00</lastmod>
+    <lastmod>2014-07-04T21:56:36+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://rmine.github.io/</loc>
-    <lastmod>2014-07-03T22:05:38+08:00</lastmod>
+    <lastmod>2014-07-04T21:56:36+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://rmine.github.io/blog/about/</loc>
-    <lastmod>2014-07-03T22:05:38+08:00</lastmod>
+    <lastmod>2014-07-04T21:56:36+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://rmine.github.io/blog/categories/</loc>
-    <lastmod>2014-07-03T22:05:38+08:00</lastmod>
+    <lastmod>2014-07-04T21:56:36+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
