@@ -13,11 +13,11 @@ layout: default
     <div class="post-teaser">
     
       <header>
-        <h1>
+        <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h1>
+        </h2>
         
-        <p class="meta">{{ post.date | date: "%B %-d, %Y" }}</p>
+        <p class="meta" title="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B %-d, %Y" }}</p>
       </header>
 
       <div class="excerpt">
