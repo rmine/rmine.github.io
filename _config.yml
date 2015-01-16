@@ -11,8 +11,8 @@ theme:
   
   # Header and footer text
   header_text: >
-     <p>不错，我又回来了</p>
-     
+     <p>上善若水</p>
+     <p>水善利万物而不争，处众人之所恶，故几于道。居善地，心善渊，与善仁，言善信，政善治，事善能，动善时。夫唯不争，故无尤。</p>
   footer_text: >
    Copyright &copy; RMine 2014 - 2015
   
@@ -48,7 +48,7 @@ theme:
   str_email: "Email"
   str_next: "Next"
   str_prev: "Prev"
-  str_continue_reading: "Continue reading"
+  str_continue_reading: "阅读全文"
   
   # Colors, typography and padding
   # Open the "_sass > base" folder, and open "_variables.scss"

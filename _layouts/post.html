@@ -14,6 +14,19 @@ layout: default
 
   <section class="post-content">
     {{ content }}
+
+    <ul class="pager">
+      {% if page.previous.url %}
+      <li class="previous">
+        <a href="{{ site.baseurl }}{{page.previous.url}}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; 上一篇</a>
+      </li>
+      {% endif %}
+      {% if page.next.url %}
+      <li class="next">
+        <a href="{{ site.baseurl }}{{page.next.url}}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">下一篇 &rarr;</a>
+      </li>
+      {% endif %}
+    </ul>
   </section>
 
   <!-- Disqus -->
