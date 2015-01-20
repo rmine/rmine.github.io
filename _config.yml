@@ -18,14 +18,14 @@ theme:
   
   # Icons
   rss: false
-  email_address: # full email address, e.g. "sam@example.com"
+  email_address: huangzr.kai7@gmail.com
   behance:
   bitbucket: 
   dribbble: 
-  facebook: 
+  facebook: rminehzr
   flickr: 
   github: "rmine"
-  google_plus: 
+  google_plus:
   instagram: 
   linkedin:  # full URL
   pinterest: 
@@ -34,7 +34,8 @@ theme:
   stack_exchange:  # full URL
   steam: 
   tumblr: 
-  twitter: "twitter"
+  twitter: rminehzr
+  weibo: rmine
   wordpress: 
   youtube: 
   
