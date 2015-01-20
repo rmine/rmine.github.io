@@ -2,7 +2,7 @@
 layout: page
 title: Archives
 permalink: /archives/
-feature-img: "img/sample_feature_img.png"
+feature-img: "img/archives.jpg"
 ---
 
 {% for post in site.posts %}

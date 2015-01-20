@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-feature-img: "img/sample_feature_img_2.png"
+feature-img: "img/about_sunshine.jpg"
 ---
 
 恩，我又回来折腾了。
