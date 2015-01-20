@@ -9,7 +9,10 @@
   a {
     color: $header-link-color;
   }
-  
+  a:hover {
+    color: #1ABC9C;
+  }
+
   .avatar {
     height: 2em;
     width: 2em;
@@ -49,4 +52,5 @@
       } 
     }
   }
+
 }
