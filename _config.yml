@@ -59,8 +59,10 @@ paginate: 5
 paginate_path: "blog/page:num"
 
 # BUILD SETTINGS
-markdown: kramdown
+markdown: redcarpet
 highlighter: pygments
+redcarpet:
+    extensions: ["fenced_code_blocks", "tables", "highlight", "strikethrough"]
 sass:
   sass_dir: _sass
   style: :compressed

@@ -45,15 +45,15 @@ $ source ~/.bash_profile
 {% endhighlight %}
 修改RVM的Ruby安装源到国内的[淘宝镜像服务器](http://ruby.taobao.org/)，这样能提高安装速度.
 {% highlight bash %}
-	$ sed -i -e 's/ftp\.ruby-lang\.org\/pub\/ruby/ruby\.taobao\.org\/mirrors\/ruby/g' ~/.rvm/config/db
+$ sed -i -e 's/ftp\.ruby-lang\.org\/pub\/ruby/ruby\.taobao\.org\/mirrors\/ruby/g' ~/.rvm/config/db
 {% endhighlight %}
 
 * 2.2 ruby的安装
 
 安装2.1.1版本,并且将此版本设置成系统的默认版本.
 {% highlight bash %}
-	rvm install 2.1.1
-	rvm use 2.1.1 --default
+rvm install 2.1.1
+rvm use 2.1.1 --default
 {% endhighlight %}
 安装成功后,请输入`ruby -v`查看版本信息.
 
@@ -62,21 +62,21 @@ $ source ~/.bash_profile
 * 3.1 下载源代码
 
 {% highlight bash %}
-	git clone git://github.com/imathis/octopress.git octopress
-	cd octopress
+git clone git://github.com/imathis/octopress.git octopress
+cd octopress
 {% endhighlight %}
 
 * 3.2 安装依赖包
 
 {% highlight bash %}
-	gem install bundler
-	bundle install
+gem install bundler
+bundle install
 {% endhighlight %}
 
 * 3.3 安装Octopress默认主题
 
 {% highlight bash %}
-	rake install
+rake install
 {% endhighlight %}
 
 #### 4 配置github page(User/Organization pages)
@@ -92,39 +92,39 @@ $ source ~/.bash_profile
 
 这里比较关键,就是将2个系统结合起来,Octopress已经为我们做好了.回到octopress目录,输入以下命令:
 {% highlight bash %}
-	rake setup_github_pages
+rake setup_github_pages
 {% endhighlight %}
 输入后会有个输入,填上你刚创建的github上的代码仓库路径(e.g. git@github.com:username/username.github.io.git或者https://github.com/username/username.github.io.git).
 这时候会把你的git路径从octopress转到github page,分支切换到了source,_deploy被放到了master分支,这里就是github部署的分支.
 
 接着输入
 {% highlight bash %}
-	rake generate
-	rake deploy
+rake generate
+rake deploy
 {% endhighlight %}
 就会把最新的代码提交到github上,能直接展示了,[username].github.io,欣赏你自己的网站吧(当然还没完,最初的样式确实不满意).
 
 _注意:如果这里`rake deploy`发生错误,应该是分支代码没有同步的关系,请进入`_deploy/`目录下,将它里面的东西提交到github上去,如下:_
 {% highlight bash %}
-	git add .
-	git commit -m 'init deploy'
-	git push origin master
+git add .
+git commit -m 'init deploy'
+git push origin master
 {% endhighlight %}
 
 接着把你工程里的资源文件也备份到github上去吧
 {% highlight bash %}
-	git add .
-	git commit -m 'your message'
-	git push origin source
+git add .
+git commit -m 'your message'
+git push origin source
 {% endhighlight %}
 
 * 4.3 自定义域名
 
 在source目录下创建CNAME文件.然后把你的域名放进去:
 {% highlight bash %}
-	echo 'your-domain.com' >> source/CNAME
-	# OR
-	echo 'www.your-domain.com' >> source/CNAME
+echo 'your-domain.com' >> source/CNAME
+# OR
+echo 'www.your-domain.com' >> source/CNAME
 {% endhighlight %}
 然后在你自己的域名提供商后台设置到你的git域名吧.
 
@@ -133,10 +133,10 @@ _注意:如果这里`rake deploy`发生错误,应该是分支代码没有同步�
 
 Octopress的配置还是相对简化的,一般只要配置`_config.yml`就可以了,下面是配置文件列表:
 {% highlight bash %}
-	_config.yml       # Main config (Jekyll's settings)
-    Rakefile          # Configs for deployment
-    config.rb         # Compass config
-    config.ru         # Rack config
+_config.yml       # Main config (Jekyll's settings)
+Rakefile          # Configs for deployment
+config.rb         # Compass config
+config.ru         # Rack config
 {% endhighlight %}
 
 #### 6 写博客
@@ -145,26 +145,26 @@ Octopress的配置还是相对简化的,一般只要配置`_config.yml`就可以
 
 新建一个博客命令:
 {% highlight bash %}
-	rake new_post["first article"]
+rake new_post["first article"]
 {% endhighlight %}
 运行后,会在`source/_posts`下生成一个文件,文件名的格式为`YYYY-MM-DD-first-article.markdown`,打开这个文件会看见如下:
 {% highlight bash %}
-	---
-	layout: post
-	title: "first article"
-	date: 2014-07-04 09:07:28 +0800
-	comments: true
-	categories: [blog,markdown]
-	---
+---
+layout: post
+title: "first article"
+date: 2014-07-04 09:07:28 +0800
+comments: true
+categories: [blog,markdown]
+---
 
-	这里就开始写你的文章啦
-
+这里就开始写你的文章啦
 {% endhighlight %}
+
 如果你的编辑器没有支持markdown的预览功能,Octopress也支持直接的页面预览,以下命令:
 {% highlight bash %}
-	rake generate   # Generates posts and pages into the public directory
-	rake watch      # Watches source/ and sass/ for changes and regenerates
-	rake preview    # Watches, and mounts a webserver at http://localhost:4000
+rake generate   # Generates posts and pages into the public directory
+rake watch      # Watches source/ and sass/ for changes and regenerates
+rake preview    # Watches, and mounts a webserver at http://localhost:4000
 {% endhighlight %}
 `rake generate`可以直接生成静态文件(注意_config.yml文件备份),`rake watch`可以让你知道哪些变了,`rake preview`就是启动了一个本地的web服务,运行在后台,这时候你就可以打开浏览器,输入`http://localhost:4000/`直接预览你的博客了.
 
@@ -176,10 +176,10 @@ Octopress的配置还是相对简化的,一般只要配置`_config.yml`就可以
 
 主题安装很简单,以我为例,我找了一个[Greyshade主题],然后安装
 {% highlight bash %}
-	$ git clone git@github.com:shashankmehta/greyshade.git .themes/greyshade
-	$ echo "\$greyshade: color;" >> sass/custom/_colors.scss //Substitue 'color' with your highlight color
-	$ rake "install[greyshade]"
-	$ rake generate
+$ git clone git@github.com:shashankmehta/greyshade.git .themes/greyshade
+$ echo "\$greyshade: color;" >> sass/custom/_colors.scss //Substitue 'color' with your highlight color
+$ rake "install[greyshade]"
+$ rake generate
 {% endhighlight %}
 然后...然后就OK啦,很无脑,很安逸.
 
