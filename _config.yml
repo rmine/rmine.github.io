@@ -2,6 +2,8 @@
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://rmine.github.io" # the base hostname & protocol for your site
 
+permalink: /:year/:month/:day/:title.html
+
 # THEME-SPECIFIC CONFIGURATION
 theme:
   # Meta
